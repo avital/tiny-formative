@@ -5,6 +5,7 @@ Meteor.methods({
     Segments.remove({});
   },
   draw: function(path) {
+    this.unblock();
 //    data.push({
 //      time: new Date - start,
 //      path: path
