@@ -1,6 +1,9 @@
 var start = new Date;
 var data = [];
 Meteor.methods({
+  clear: function() {
+    Segments.remove({});
+  },
   draw: function(path) {
 //    data.push({
 //      time: new Date - start,

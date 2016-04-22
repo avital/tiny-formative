@@ -1,5 +1,8 @@
 {
-    "MONGO_URL": "mongodb://user:password@ds017931-a0.mlab.com:17931,ds017931-a1.mlab.com:17931/formative-test?replicaSet=rs-ds017931",
-    "MONGO_OPLOG_URL": "mongodb://user:password@ds017931-a0.mlab.com:17931,ds017931-a1.mlab.com:17931/local?replicaSet=rs-ds017931&authSource=formative-test"
-"
+    "galaxy.meteor.com": {
+        "env": {
+            "MONGO_URL": "mongodb://user:password@ds017931-a0.mlab.com:17931,ds017931-a1.mlab.com:17931/formative-test?replicaSet=rs-ds017931",
+            "MONGO_OPLOG_URL": "mongodb://user:password@ds017931-a0.mlab.com:17931,ds017931-a1.mlab.com:17931/local?replicaSet=rs-ds017931&authSource=admin"
+        }
+    }
 }
