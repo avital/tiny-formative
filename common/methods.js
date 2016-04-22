@@ -4,7 +4,7 @@ Meteor.methods({
   clear: function() {
     Segments.remove({});
   },
-  draw: function(path) {
+  draw: function(fakeUserId, segments) {
     this.unblock();
 //    data.push({
 //      time: new Date - start,
@@ -12,6 +12,6 @@ Meteor.methods({
 //    });
 //    console.log(JSON.stringify(data));
     //    console.log();
-    return Segments.insert(path);
+    return Segments.insert({fakeUserId, segments});
   }
 });
