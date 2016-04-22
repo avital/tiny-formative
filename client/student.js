@@ -34,11 +34,22 @@ loadStudentView = function(fakeUserId) {
     tool.on('mouseup', function(event) {
       path.simplify(10);
 
-      var segmentsSerialized = path.segments.map(segment => ({
-        p: _.pick(segment.point, 'x', 'y'),
-        hI: _.pick(segment.handleIn, 'x', 'y'),
-        hO: _.pick(segment.handleOut, 'x', 'y')
-      }));
+      var segmentsSerialized = path.segments.map(segment => {
+        var serialized = {
+          p: _.pick(segment.point, 'x', 'y'),
+          hI: _.pick(segment.handleIn, 'x', 'y'),
+          hO: _.pick(segment.handleOut, 'x', 'y')
+        };
+
+        serialized.p.x = serialized.p.x.toFixed(2);
+        serialized.p.y = serialized.p.y.toFixed(2);
+        serialized.hI.x = serialized.hI.x.toFixed(2);
+        serialized.hI.y = serialized.hI.y.toFixed(2);
+        serialized.hO.x = serialized.hO.x.toFixed(2);
+        serialized.hO.y = serialized.hO.y.toFixed(2);
+
+        return serialized;
+      });
 
       newSegmentBeingSent = true;
       var segmentId = Meteor.call("draw", fakeUserId, segmentsSerialized);

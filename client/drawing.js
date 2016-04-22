@@ -26,6 +26,12 @@ createPaperCanvas = function createPaperCanvas(fakeUserId, segmentsCursor, shoul
       var segments = path.segments.map(
         segmentSerialized => {
           var {p, hI, hO} = segmentSerialized;
+          p.x = parseFloat(p.x);
+          p.y = parseFloat(p.y);
+          hI.x = parseFloat(hI.x);
+          hI.y = parseFloat(hI.y);
+          hO.x = parseFloat(hO.x);
+          hO.y = parseFloat(hO.y);
           return new Segment(p, hI, hO);
         });
 
