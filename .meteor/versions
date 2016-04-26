@@ -21,6 +21,7 @@ diff-sequence@1.0.4
 ecmascript@0.4.2
 ecmascript-runtime@0.2.9
 ejson@1.0.10
+email@1.0.11
 es5-shim@4.5.9
 fastclick@1.0.10
 geojson-utils@1.0.7
@@ -33,9 +34,12 @@ insecure@1.0.6
 jquery@1.11.7
 launch-screen@1.0.10
 livedata@1.0.17
+localstorage@1.0.8
 logging@1.0.11
 meteor@1.1.13
 meteor-base@1.0.3
+meteorhacks:kadira@2.28.5
+meteorhacks:meteorx@1.4.1
 minifier-css@1.1.10
 minifier-js@1.1.10
 minimongo@1.0.13
@@ -45,6 +49,7 @@ modules@0.5.2
 modules-runtime@0.6.2
 mongo@1.1.6
 mongo-id@1.0.3
+mongo-livedata@1.0.11
 npm-mongo@1.4.42
 observe-sequence@1.0.10
 ordered-dict@1.0.6

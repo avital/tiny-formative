@@ -1,4 +1,8 @@
 {
+    "kadira": {
+        "appId": "otfLauNNyCnh3DG7e",
+        "appSecret": "354108a1-da8a-4e25-8afa-f583bb60a0b2"
+    },
     "galaxy.meteor.com": {
         "env": {
             "MONGO_URL": "mongodb://user:password@ds017931-a0.mlab.com:17931,ds017931-a1.mlab.com:17931/formative-test?replicaSet=rs-ds017931",

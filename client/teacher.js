@@ -1,5 +1,6 @@
 loadTeacherView = function () {
-  Meteor.subscribe("teacher");
+  var start = new Date;
+  Meteor.subscribe("teacher", () => { console.log((new Date) - start) + "ms"; });
 
   var paperCanvasForFakeUserIds = {};
 
