@@ -66,54 +66,61 @@ XXX
 
 ## Latest load test results when running locally
 
-Run on April 26, 2016 at 11pm Pacific Time.
+Run on April 26, 2016 at 11pm Pacific Time. (trimmed, it pretty much
+just hangs)
 
 ```
 Running load test with 400 concurrent students
 
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:02 GMT-0700 (PDT)
-Method : average: 4174/min 102ms
-         clear: 11/min 46ms
-         draw: 4162/min 102ms
+Time   : Tue Apr 26 2016 23:32:30 GMT-0700 (PDT)
+Method : average: 4488/min 157ms
+         clear: 12/min 9ms
+         draw: 4476/min 157ms
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:07 GMT-0700 (PDT)
-Method : average: 743/min 2ms
-         draw: 743/min 2ms
+Time   : Tue Apr 26 2016 23:32:35 GMT-0700 (PDT)
+Method : average: 371/min 11ms
+         draw: 371/min 11ms
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:12 GMT-0700 (PDT)
-Method : average: 11148/min 192ms
-         draw: 11148/min 192ms
+Time   : Tue Apr 26 2016 23:32:40 GMT-0700 (PDT)
+Method : average: 1595/min 1304ms
+         draw: 1595/min 1304ms
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:17 GMT-0700 (PDT)
-Method : average: 10639/min 112ms
-         draw: 10639/min 112ms
+Time   : Tue Apr 26 2016 23:32:45 GMT-0700 (PDT)
+Method : average: 5052/min 5303ms
+         draw: 5052/min 5303ms
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:22 GMT-0700 (PDT)
-Method : average: 19588/min 2276ms
-         draw: 19588/min 2276ms
+Time   : Tue Apr 26 2016 23:32:50 GMT-0700 (PDT)
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:27 GMT-0700 (PDT)
-Method : average: 14064/min 1398ms
-         draw: 14064/min 1398ms
+Time   : Tue Apr 26 2016 23:32:55 GMT-0700 (PDT)
+Method : average: 9296/min 14167ms
+         draw: 9296/min 14167ms
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:32 GMT-0700 (PDT)
-Method : average: 18888/min 968ms
-         draw: 18888/min 968ms
+Time   : Tue Apr 26 2016 23:33:00 GMT-0700 (PDT)
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:37 GMT-0700 (PDT)
-Method : average: 17784/min 155ms
-         draw: 17784/min 155ms
+Time   : Tue Apr 26 2016 23:33:05 GMT-0700 (PDT)
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:42 GMT-0700 (PDT)
-Method : average: 8832/min 1320ms
-         draw: 8832/min 1320ms
+Time   : Tue Apr 26 2016 23:33:10 GMT-0700 (PDT)
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:47 GMT-0700 (PDT)
-Method : average: 18948/min 5221ms
-         draw: 18948/min 5221ms
+Time   : Tue Apr 26 2016 23:33:15 GMT-0700 (PDT)
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:52 GMT-0700 (PDT)
-Method : average: 4787/min 7731ms
-         draw: 4787/min 7731ms
+Time   : Tue Apr 26 2016 23:33:20 GMT-0700 (PDT)
+--------------------------------------------------
+Time   : Tue Apr 26 2016 23:33:25 GMT-0700 (PDT)
+--------------------------------------------------
+Time   : Tue Apr 26 2016 23:33:30 GMT-0700 (PDT)
+--------------------------------------------------
+Time   : Tue Apr 26 2016 23:33:35 GMT-0700 (PDT)
+--------------------------------------------------
+Time   : Tue Apr 26 2016 23:33:40 GMT-0700 (PDT)
+--------------------------------------------------
+Time   : Tue Apr 26 2016 23:33:45 GMT-0700 (PDT)
+--------------------------------------------------
+Time   : Tue Apr 26 2016 23:33:50 GMT-0700 (PDT)
+Method : average: 13018/min 62557ms
+         draw: 13018/min 62557ms
+--------------------------------------------------
+Time   : Tue Apr 26 2016 23:33:55 GMT-0700 (PDT)
+--------------------------------------------------
+Time   : Tue Apr 26 2016 23:34:00 GMT-0700 (PDT)
 ```

@@ -18,7 +18,6 @@ ddp-common@1.2.4
 ddp-server@1.2.5
 deps@1.0.11
 diff-sequence@1.0.4
-disable-oplog@1.0.6
 ecmascript@0.4.2
 ecmascript-runtime@0.2.9
 ejson@1.0.10
