@@ -28,7 +28,7 @@ Simulate the teacher by loading
 browser.
 
 To clear all drawings, open a browser console and run
-`Meteor.call("clear")`.
+`Meteor.call("clear")`. Then you'll have to reload your browser.
 
 ## Load testing
 
