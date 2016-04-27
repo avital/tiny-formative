@@ -47,5 +47,5 @@ Meteor.publish("teacher", function() {
   pub.refetch();
 
   pub._session.sendReady([pub._subscriptionId]);
-  console.log((new Date) - start + "ms");
+  console.log(`Initial publication load: ${(new Date) - start} ms`);
 });
