@@ -1,5 +1,7 @@
 # tiny-formative
 
+TODO: Major reorg and simplification of app pub/sub code
+
 This is a small Meteor app for students and a single teacher. Each
 student draws a single diagram, and the teacher sees the diagrams that
 all of the students are drawing. The drawings update live while the

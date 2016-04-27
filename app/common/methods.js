@@ -28,7 +28,7 @@ Meteor.methods({
       docsToInsert.push(doc);
       insertDocInAllActive(doc);
     } else {
-      Docs.insert(doc);
+      Segments.insert(doc);
     }
     return id;
   }
