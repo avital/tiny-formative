@@ -16,7 +16,7 @@ The load test is located in the `load-test/` subdirectory.
 
 ```js
 cd app
-npm install # This will print gyp errors. That's OK.
+npm install # This will print gyp errors. That\'s OK.
 meteor
 ```
 
