@@ -14,9 +14,9 @@ The load test is located in the `load-test/` subdirectory.
 
 ## Running the app
 
-```js
+```sh
 cd app
-npm install # This will print gyp errors. That\'s OK.
+npm install # This will print gyp errors. That's OK.
 meteor
 ```
 
@@ -51,7 +51,7 @@ Run the app locally and point your browser to
 that if you clear drawings you have to reload the page)
 
 Then, run the load test:
-```js
+```sh
 cd load-test
 npm install node
 index.js
