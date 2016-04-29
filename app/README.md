@@ -42,7 +42,7 @@ is used.
 There is no publication merging, so there is no additional memory and
 CPU overhead on the server.
 
-## Scaling plan
+## Scaling plan (sketch)
 
 We'll definitely need multiple application servers, and we'll shard
 them based on classroom (meaning all students and teachers in the same
