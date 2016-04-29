@@ -8,7 +8,7 @@ loadStudentView = function(fakeUserId) {
     var newSegmentBeingSent = false;
 
     const {tool} = createPaperCanvas(
-      fakeUserId, Segments.find({fakeUserId}), () => newSegmentBeingSent);
+      fakeUserId, Segments.find({u: fakeUserId}), () => newSegmentBeingSent);
 
     var textItem = new PointText({
       content: 'Click and drag to draw a line.',

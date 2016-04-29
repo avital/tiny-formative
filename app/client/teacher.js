@@ -1,15 +1,17 @@
 loadTeacherView = function () {
   var start = new Date;
-  Meteor.subscribe("teacher", () => { console.log((new Date) - start) + "ms"; });
+  Meteor.subscribe("teacher", () => {
+    console.log(`Initial data load: ${((new Date) - start)} ms`);
+  });
 
   var paperCanvasForFakeUserIds = {};
 
   Segments.find({}).observe({
-    added: function({fakeUserId}) {
-      if (!paperCanvasForFakeUserIds[fakeUserId]) {
-        paperCanvasForFakeUserIds[fakeUserId] = createPaperCanvas(
-          fakeUserId,
-          Segments.find({fakeUserId: fakeUserId}));
+    added: function({u /*userId*/}) {
+      if (!paperCanvasForFakeUserIds[u]) {
+        paperCanvasForFakeUserIds[u] = createPaperCanvas(
+          u,
+          Segments.find({u}));
       }
     }
   });

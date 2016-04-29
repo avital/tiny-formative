@@ -1,8 +1,5 @@
 # tiny-formative
 
-TODO: Major reorg, simplification and clarification of app pub/sub
-code
-
 This is a small Meteor app for students and a single teacher. Each
 student draws a single diagram, and the teacher sees the diagrams that
 all of the students are drawing. The drawings update live while the
@@ -72,48 +69,44 @@ Run on April 26, 2016 at 11pm Pacific Time.
 Running load test with 400 concurrent students
 
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:02 GMT-0700 (PDT)
-Method : average: 4174/min 102ms
-         clear: 11/min 46ms
-         draw: 4162/min 102ms
+Time   : Thu Apr 28 2016 21:09:01 GMT-0700 (PDT)
+Method : average: 4570/min 22ms
+         draw: 4558/min 18ms
+         clear: 11/min 1259ms
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:07 GMT-0700 (PDT)
-Method : average: 743/min 2ms
-         draw: 743/min 2ms
+Time   : Thu Apr 28 2016 21:09:06 GMT-0700 (PDT)
+Method : average: 239/min 2ms
+         draw: 239/min 2ms
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:12 GMT-0700 (PDT)
-Method : average: 11148/min 192ms
-         draw: 11148/min 192ms
+Time   : Thu Apr 28 2016 21:09:11 GMT-0700 (PDT)
+Method : average: 11865/min 37ms
+         draw: 11865/min 37ms
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:17 GMT-0700 (PDT)
-Method : average: 10639/min 112ms
-         draw: 10639/min 112ms
+Time   : Thu Apr 28 2016 21:09:16 GMT-0700 (PDT)
+Method : average: 11949/min 309ms
+         draw: 11949/min 309ms
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:22 GMT-0700 (PDT)
-Method : average: 19588/min 2276ms
-         draw: 19588/min 2276ms
+Time   : Thu Apr 28 2016 21:09:21 GMT-0700 (PDT)
+Method : average: 22812/min 980ms
+         draw: 22812/min 980ms
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:27 GMT-0700 (PDT)
-Method : average: 14064/min 1398ms
-         draw: 14064/min 1398ms
+Time   : Thu Apr 28 2016 21:09:26 GMT-0700 (PDT)
+Method : average: 15144/min 88ms
+         draw: 15144/min 88ms
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:32 GMT-0700 (PDT)
-Method : average: 18888/min 968ms
-         draw: 18888/min 968ms
+Time   : Thu Apr 28 2016 21:09:31 GMT-0700 (PDT)
+Method : average: 12117/min 134ms
+         draw: 12117/min 134ms
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:37 GMT-0700 (PDT)
-Method : average: 17784/min 155ms
-         draw: 17784/min 155ms
+Time   : Thu Apr 28 2016 21:09:36 GMT-0700 (PDT)
+Method : average: 25092/min 155ms
+         draw: 25092/min 155ms
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:42 GMT-0700 (PDT)
-Method : average: 8832/min 1320ms
-         draw: 8832/min 1320ms
+Time   : Thu Apr 28 2016 21:09:41 GMT-0700 (PDT)
+Method : average: 24391/min 341ms
+         draw: 24391/min 341ms
 --------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:47 GMT-0700 (PDT)
-Method : average: 18948/min 5221ms
-         draw: 18948/min 5221ms
---------------------------------------------------
-Time   : Tue Apr 26 2016 23:25:52 GMT-0700 (PDT)
-Method : average: 4787/min 7731ms
-         draw: 4787/min 7731ms
+Time   : Thu Apr 28 2016 21:09:46 GMT-0700 (PDT)
+Method : average: 1415/min 2ms
+         draw: 1415/min 2ms
 ```
