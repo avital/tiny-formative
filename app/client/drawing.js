@@ -1,29 +1,23 @@
 import paper, { Path, PointText, Point, PaperScope, Tool, Segment } from 'paper';
 
 // Returns {tool: ...}
-createPaperCanvas = function createPaperCanvas(fakeUserId, segmentsCursor, shouldExpectLocalAdd) {
-  if (!shouldExpectLocalAdd) {
-    shouldExpectLocalAdd = () => false;
-  }
-
+createPaperCanvas = function createPaperCanvas(studentId, drawingCursor) {
   $("body").append(
-    $(`<canvas keepalive="true" class="canvas" resize="true" id="canvas-${fakeUserId}" height="400" width="400">`));
+    $(`<canvas keepalive="true" class="canvas" resize="true" id="canvas-${studentId}" height="400" width="400">`));
 
   var scope = new PaperScope;
-  scope.setup(document.getElementById(`canvas-${fakeUserId}`));
+  scope.setup(document.getElementById(`canvas-${studentId}`));
   var tool = new Tool;
   scope.tool = tool;
 
   var path;
 
-  segmentsCursor.observe({
-    added: function(path) {
-      // Don't re-draw locally drawn paths
-      if (shouldExpectLocalAdd()) {
-        return;
-      }
-
-      var segments = path.s.map(
+  function updateCanvas(paths) {
+    console.log("Got update:", paths);
+    delete paths._id;
+    for (pathId in paths) {
+      var path = paths[pathId];
+      var segments = path.map(
         segmentSerialized => {
           var {p, hI, hO} = segmentSerialized;
           p.x = parseFloat(p.x);
@@ -42,7 +36,14 @@ createPaperCanvas = function createPaperCanvas(fakeUserId, segmentsCursor, shoul
       });
       scope.project.view.draw();
     }
-  });
+  }
+
+  if (drawingCursor) {
+    drawingCursor.forEach(updateCanvas);
+    drawingCursor.observeChanges({
+      changed: (id, fields) => updateCanvas(fields)
+    });
+  }
 
   return {tool};
 }

@@ -1,14 +1,9 @@
 import paper, { Path, PointText, Point, PaperScope, Tool, Segment } from 'paper';
 
-loadStudentView = function(fakeUserId) {
-  Meteor.subscribe("student", fakeUserId);
-
+loadStudentView = function(sectionId, studentId) {
   // Wait until initial DOM is rendered
   Meteor.startup(() => {
-    var newSegmentBeingSent = false;
-
-    const {tool} = createPaperCanvas(
-      fakeUserId, Segments.find({u: fakeUserId}), () => newSegmentBeingSent);
+    const {tool} = createPaperCanvas(studentId, null);
 
     var textItem = new PointText({
       content: 'Click and drag to draw a line.',
@@ -34,7 +29,7 @@ loadStudentView = function(fakeUserId) {
     tool.on('mouseup', function(event) {
       path.simplify(10);
 
-      var segmentsSerialized = path.segments.map(segment => {
+      var pathSerialized = path.segments.map(segment => {
         var serialized = {
           p: _.pick(segment.point, 'x', 'y'),
           hI: _.pick(segment.handleIn, 'x', 'y'),
@@ -51,9 +46,7 @@ loadStudentView = function(fakeUserId) {
         return serialized;
       });
 
-      newSegmentBeingSent = true;
-      var segmentId = Meteor.call("draw", fakeUserId, segmentsSerialized);
-      newSegmentBeingSent = false;
+      var segmentId = Meteor.call("draw", {sectionId, studentId, path: pathSerialized});
     });
   });
 };

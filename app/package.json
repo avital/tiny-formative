@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "meteor-node-stubs": "~0.2.0",
-    "paper": "^0.9.25"
+    "paper": "^0.9.25",
+    "redis-eventemitter": "^1.0.1"
   }
 }

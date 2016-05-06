@@ -3,9 +3,12 @@ fakeUserId = window.location.pathname === '/teacher' ? null : Random.id();
 isStudent = !!fakeUserId;
 isTeacher = !isStudent;
 
+// xcxc
+var sectionId = 1;
+
 if (isStudent) {
-  loadStudentView(fakeUserId);
+  loadStudentView(sectionId, fakeUserId);
 } else {
-  loadTeacherView();
+  loadTeacherView(sectionId);
 }
 
